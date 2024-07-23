@@ -7,7 +7,7 @@ public class GameMechanics : MonoBehaviour
 {
     // Start is called before the first frame update
     public TextMeshProUGUI timeText;
-    private float time = 75;
+    public static float time = 75;
     void FixedUpdate()
     {
         time-=0.02f;
