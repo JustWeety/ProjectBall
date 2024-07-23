@@ -55,5 +55,9 @@ public class PlayerMovement : MonoBehaviour
         {
             isOnGround=true;
         }
+        if(collisionInfo.gameObject.CompareTag("Cylinder"))
+        {
+            isOnGround=false;
+        }
     }
 }
