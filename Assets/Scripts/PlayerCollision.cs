@@ -16,8 +16,9 @@ public class PlayerCollision : MonoBehaviour
             score+=5;
             scoreText.text="SCORE: "+score;
         }
-        if (score==75)
+        if (score==225)
         {
+
             SceneManager.LoadScene("Outro");
         }
     }

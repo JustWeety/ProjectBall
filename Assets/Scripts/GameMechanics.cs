@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameMechanics : MonoBehaviour
 {
@@ -13,5 +14,9 @@ public class GameMechanics : MonoBehaviour
         time-=0.02f;
         string formattedTime = time.ToString("F1");
         timeText.text="Time: "+formattedTime;
+        if(time<=0)
+        {
+            SceneManager.LoadScene("Outro");
+        }
     }    
 }
