@@ -366,7 +366,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUIT The Game
+  m_text: OYUNDAN CIK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 1740517329}
   - component: {fileID: 1740517328}
   m_Layer: 5
-  m_Name: Quit
+  m_Name: Cikis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -555,7 +555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -270}
+  m_AnchoredPosition: {x: 15, y: -227}
   m_SizeDelta: {x: 400, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740517328
@@ -603,8 +603,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4283890930079860398}
-        m_TargetAssemblyTypeName: OutroMechanics, Assembly-CSharp
-        m_MethodName: QuitTheGame
+        m_TargetAssemblyTypeName: CikisMekanikleri, Assembly-CSharp
+        m_MethodName: OyundanCik
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -754,6 +754,10 @@ PrefabInstance:
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 168375406510662566, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_text
+      value: 'Sure:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 168375406510662566, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_fontSize
       value: 60
       objectReference: {fileID: 0}
@@ -763,7 +767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 168375406510662566, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_margin.z
-      value: -159.7609
+      value: -84.36417
       objectReference: {fileID: 0}
     - target: {fileID: 168375406510662566, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_fontSizeBase
@@ -799,15 +803,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464656007602325092, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 464656007602325092, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 188
+      value: 191
       objectReference: {fileID: 0}
     - target: {fileID: 669798378004152880, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 828798978534771023, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_text
+      value: 'HAKKINDA
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 890284713834399937, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_SizeDelta.x
@@ -835,11 +845,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 977200515931016348, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5.0268
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 977200515931016348, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -18.6604
+      value: -18.661
       objectReference: {fileID: 0}
     - target: {fileID: 988735847546096501, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_SizeDelta.x
@@ -857,6 +867,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 1088796866681138521, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_Name
+      value: SKOR
+      objectReference: {fileID: 0}
     - target: {fileID: 1117225918923474634, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_text
       value: 'Highest Score: 120'
@@ -872,6 +886,10 @@ PrefabInstance:
     - target: {fileID: 1117225918923474634, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_fontSizeBase
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2574353283178267875, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_Name
+      value: "Hakk\u0131nda"
       objectReference: {fileID: 0}
     - target: {fileID: 3538829831649148258, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_SizeDelta.x
@@ -891,7 +909,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3806889494406662534, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_text
-      value: 'Score: 120'
+      value: 'SKOR: 225
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 3806889494406662534, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_fontSize
@@ -899,7 +919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3806889494406662534, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_margin.z
-      value: -92.11795
+      value: -46.34134
       objectReference: {fileID: 0}
     - target: {fileID: 3806889494406662534, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_fontSizeBase
@@ -922,12 +942,16 @@ PrefabInstance:
       value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 5243094514271539782, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_text
+      value: Her Zaman Tekrar Deneyebilirsin!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243094514271539782, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_fontSize
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5243094514271539782, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_margin.z
-      value: -88.66437
+      value: -236.76532
       objectReference: {fileID: 0}
     - target: {fileID: 5243094514271539782, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_fontStyle
@@ -936,6 +960,10 @@ PrefabInstance:
     - target: {fileID: 5243094514271539782, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_fontSizeBase
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253188877308171340, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_Name
+      value: Tekrar Oyna
       objectReference: {fileID: 0}
     - target: {fileID: 5375514281094269022, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_SizeDelta.x
@@ -947,11 +975,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5375514281094269022, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 5375514281094269022, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.9395
+      value: -1.9394
+      objectReference: {fileID: 0}
+    - target: {fileID: 5653820407282649208, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_text
+      value: TEBRIKLER!
       objectReference: {fileID: 0}
     - target: {fileID: 5653820407282649208, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_Enabled
@@ -963,7 +995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5653820407282649208, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_margin.z
-      value: -97.809204
+      value: 28.75
       objectReference: {fileID: 0}
     - target: {fileID: 5653820407282649208, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_fontStyle
@@ -984,6 +1016,10 @@ PrefabInstance:
     - target: {fileID: 5764392979195916105, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_Color.r
       value: 0.4490565
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854779312210519323, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_Name
+      value: 'Sure:'
       objectReference: {fileID: 0}
     - target: {fileID: 6395496886800903130, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_Pivot.x
@@ -1083,11 +1119,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6702023171234495006, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToPlayAgain
+      value: TekrarOynamakIcin
       objectReference: {fileID: 0}
     - target: {fileID: 6702023171234495006, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: OutroMechanics, Assembly-CSharp
+      value: CikisMekanikleri, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6702023171234495006, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1095,15 +1131,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6822029984768358895, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_Name
-      value: When Win
+      value: Kazandiginda
       objectReference: {fileID: 0}
     - target: {fileID: 6822029984768358895, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6850231562196423235, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_Name
+      value: TEBRIKLER!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850231562196423235, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451701877884852629, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_Name
+      value: Her Zaman Tekrar Deneyebilirsin!
       objectReference: {fileID: 0}
     - target: {fileID: 7865876013305727509, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1121,6 +1165,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -200
       objectReference: {fileID: 0}
+    - target: {fileID: 7911385923131429137, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_Name
+      value: TEKRAR OYNA!
+      objectReference: {fileID: 0}
     - target: {fileID: 8890584688189806770, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_SizeDelta.x
       value: 100
@@ -1136,6 +1184,14 @@ PrefabInstance:
     - target: {fileID: 8890584688189806770, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 349
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012635111334032043, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_text
+      value: TEKRAR OYNA!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170214765438437441, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
+      propertyPath: m_Name
+      value: Kaybettiginde
       objectReference: {fileID: 0}
     - target: {fileID: 9170214765438437441, guid: 7c11234fa403dfe45a00b7614e66ed46, type: 3}
       propertyPath: m_IsActive
@@ -1174,11 +1230,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61194638ff97b204ab80e2bd0d8f3f3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: {fileID: 4283890930079860402}
-  score: {fileID: 4283890930079860400}
-  source: {fileID: 4283890930079860399}
-  win: {fileID: 8300000, guid: 67dc76990ffc5da44a76c2fbbe8568df, type: 3}
-  lose: {fileID: 8300000, guid: 232bd3fdff05d3049b6244b5a470a2e1, type: 3}
+  zaman: {fileID: 4283890930079860402}
+  skor: {fileID: 4283890930079860400}
+  kaynak: {fileID: 4283890930079860399}
+  kazanma: {fileID: 8300000, guid: 67dc76990ffc5da44a76c2fbbe8568df, type: 3}
+  kaybetme: {fileID: 8300000, guid: 232bd3fdff05d3049b6244b5a470a2e1, type: 3}
 --- !u!82 &4283890930079860399
 AudioSource:
   m_ObjectHideFlags: 0

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateCylinder : MonoBehaviour
+public class Donme : MonoBehaviour
 {
-    public Vector3 rotationSpeed;
+    public Vector3 donmeHizi;
     void Start()
     {
         
@@ -13,6 +13,6 @@ public class RotateCylinder : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Rotate(rotationSpeed);
+        transform.Rotate(donmeHizi);
     }
 }
